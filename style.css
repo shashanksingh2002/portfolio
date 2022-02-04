@@ -1,0 +1,93 @@
+/*Adding Google-Fonts to the page*/
+@import url('https://fonts.googleapis.com/css2?family=Comforter&family=Work+Sans:wght@100&display=swap');
+body{
+    margin:0;
+    padding:0;
+    color:white;
+    overflow-x: hidden;
+} 
+.mainPage{
+    width:100vw;
+    height:100vh;
+    background-color: black;
+}  
+header{
+    font-family: 'Roboto', sans-serif;
+    width:100%;
+    top:0;
+    display:flex;
+    justify-content: space-between;
+}
+#logo{
+    width:15%;
+    text-align: center;
+    padding:0.8rem;
+    margin-top: 0.5rem;
+}
+#logo i{
+    font-size: 3rem;
+    color:white;
+    transition: all 0.5s ease-in-out;
+}
+#logo i:hover{
+   color: rgb(110, 187, 23);
+}
+.navigation{
+    color:white;
+    width:60%;
+}
+.navigation ul{
+    list-style: none;
+    display:flex;
+    justify-content: space-evenly;
+    font-size: 1.5rem;
+    margin-right: 1rem;
+}
+.navigation ul li{
+    padding:0.5rem;
+    border-radius: 25px;
+    transition: all 0.6s ease-in-out;
+}
+.navigation ul li:hover{
+    background-color: crimson;
+}
+.introText{
+    outline:2px solid white;
+    width:70%;
+    margin:3rem auto;
+}
+#welcome {
+    text-align: center;
+    font-size: 3.5rem;
+    color:#ff0054;
+    border:2px solid white;
+}
+.wrapper{
+    outline:2px solid cyan;
+    display:flex;
+    justify-content: space-evenly;
+
+}
+#name{
+    outline:2px solid rgb(17, 0, 255);
+    width:40%;
+    color:rgb(54, 214, 25);
+    font-size: 6em;
+}
+#icons{
+    outline:2px solid rgb(0, 60, 255);
+    width:50%;
+}
+#icons ul{
+    list-style:none;
+    display:flex;
+    justify-content: space-evenly;
+    font-size: 3em;
+    align-items: center;
+    
+}
+#jsRunner{
+    height:20%;
+    color:white;
+    border:2px solid red;
+}
