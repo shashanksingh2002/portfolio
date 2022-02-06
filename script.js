@@ -1,11 +1,17 @@
 const text = document.querySelector('#jsRunner p');
-console.log('h');
-const string = ['Competitive Programmer', 'Front-End Developer', 'Student', '2nd Year at SRM'];
 
-string.forEach(string => {
-        
-        setInterval(() => {
-            text.value = string;
-        }, 1000);
-       
-});
+
+const string = ['Competitive Programmer', 'MERN-Stack Developer', 'Student', 'Engineer'];
+
+setInterval(() => {
+    let i = 0;
+    const setintervalID=setInterval(() => {
+        if (i === string.length) {
+            clearInterval(setintervalID);
+        }
+        else {
+            text.innerText = string[i];
+            i++;
+        }
+    }, 1000);
+}, 4000);

@@ -1,93 +1,207 @@
 /*Adding Google-Fonts to the page*/
-@import url('https://fonts.googleapis.com/css2?family=Comforter&family=Work+Sans:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Comforter&family=Roboto:wght@100;300;500&family=Work+Sans:wght@100&display=swap');
+/*************ON PAGE CSS**************/
 body{
     margin:0;
     padding:0;
+    background-color: black;
     color:white;
+    font-family: 'roboto',sans-serif;
     overflow-x: hidden;
-} 
+}
+/***************FIRST PAGE****************/
 .mainPage{
+    /* outline:2px solid white; */
     width:100vw;
     height:100vh;
-    background-color: black;
-}  
-header{
-    font-family: 'Roboto', sans-serif;
+    margin-top:8rem;
+}
+/* *********HEADER CSS********* */
+.header{
+    /* outline:2px solid white; */
     width:100%;
-    top:0;
     display:flex;
+    flex-wrap: nowrap;
     justify-content: space-between;
-}
-#logo{
-    width:15%;
-    text-align: center;
-    padding:0.8rem;
-    margin-top: 0.5rem;
-}
-#logo i{
-    font-size: 3rem;
-    color:white;
-    transition: all 0.5s ease-in-out;
-}
-#logo i:hover{
-   color: rgb(110, 187, 23);
-}
-.navigation{
-    color:white;
-    width:60%;
-}
-.navigation ul{
-    list-style: none;
-    display:flex;
-    justify-content: space-evenly;
-    font-size: 1.5rem;
-    margin-right: 1rem;
-}
-.navigation ul li{
-    padding:0.5rem;
-    border-radius: 25px;
-    transition: all 0.6s ease-in-out;
-}
-.navigation ul li:hover{
-    background-color: crimson;
-}
-.introText{
-    outline:2px solid white;
-    width:70%;
-    margin:3rem auto;
-}
-#welcome {
-    text-align: center;
-    font-size: 3.5rem;
-    color:#ff0054;
-    border:2px solid white;
-}
-.wrapper{
-    outline:2px solid cyan;
-    display:flex;
-    justify-content: space-evenly;
-
-}
-#name{
-    outline:2px solid rgb(17, 0, 255);
-    width:40%;
-    color:rgb(54, 214, 25);
-    font-size: 6em;
-}
-#icons{
-    outline:2px solid rgb(0, 60, 255);
-    width:50%;
-}
-#icons ul{
-    list-style:none;
-    display:flex;
-    justify-content: space-evenly;
-    font-size: 3em;
-    align-items: center;
+    background-color: transparent;
+    position: -webkit-fixed;
+    position: fixed;
+    top: 0;    
     
 }
+#logo{
+    /* outline:2px solid white; */
+    font-size:3em;
+    margin-left: 2rem;
+    display: grid;
+    place-items: center;
+    transition: 1s ease-in-out;
+}
+#logo:hover{
+   
+    color:darkgreen;
+}
+.navigation{
+    /* outline:2px solid white; */
+    width:70%;
+}
+.navigation ul{
+    font-size: 1.2em;
+    list-style: none;
+    display:flex;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+}
+.navigation li{
+    /* outline:2px solid white; */
+    padding:0.7rem;
+    transition: 1s ease-in-out;
+    cursor: pointer;
+}
+.navigation li:hover{
+    background-color:crimson;
+}
+/* ********************HEADER ENDS****************** */
+/* *****************MAIN BEGINS*************** */
+.introText{
+    /* outline:2px solid white; */
+    width:80%;
+    height:80%;
+    margin:0 auto;
+}
+#welcome{
+    /* outline:2px solid pink; */
+    text-align: center;
+    font-size: 3em;
+    height:15%;
+    width:100%;
+    overflow: auto;
+    color:greenyellow;
+    letter-spacing: 0.05em;
+}
+.wrapper{
+    /* outline:2px solid red; */
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:space-evenly;
+    height:fit-content;
+}
+#name{
+    /* outline:2px solid white; */
+    width:45%;
+    font-size:4.5em;
+    color:crimson;
+    font-weight: 300;
+    letter-spacing: 0.02em;
+}
 #jsRunner{
-    height:20%;
+    /* outline:2px solid cyan; */
+    margin-left:2rem;
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 0.4em;
+    align-items: center;
+    justify-content: center;
+    height: fit-content;
     color:white;
-    border:2px solid red;
+
+}
+#jsRunner i{
+    text-align: center;
+    width:10%;
+    /* outline:2px solid white; */
+}
+#jsRunner p{
+    width:85%;
+    /* outline:2px solid crimson; */
+}
+#icons{
+    margin:auto 0;
+    /* outline:2px solid white; */
+    width:45%;
+}
+#icons ul{
+    /* outline:2px solid white; */
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+#icons li{
+    font-size: 3.2em;
+    /* outline:2px solid white; */
+    padding:1rem;
+    border-radius: 25px;
+    transition: 1s ease-in-out;
+  
+}
+#linkedin:hover{
+    box-shadow: 0 4px 8px 0 lightblue, 0 6px 20px 0 lightblue;
+}
+#gitHub:hover{
+    box-shadow: 0 4px 8px 0 white, 0 6px 20px 0 white;
+}
+#instagram:hover{
+    box-shadow: 0 4px 8px 0 rgb(219, 102, 121), 0 6px 20px 0 rgb(219, 102, 121);
+}
+#codepen:hover{
+    box-shadow: 0 4px 8px 0 white, 0 6px 20px 0 white;
+}
+/* ************FIRST PAGE ENDS************* */
+
+.secondPage{
+    width:100vw;
+    height:100vh;
+    background-color: rgb(33,33,33);
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    overflow: auto;
+}
+.secondPage>p{
+    font-weight:100;
+    margin:0 auto;
+    margin-top:5rem;
+    width:90%;
+    font-size: 5em;
+
+}
+#about-me{
+    color:rgb(209, 199, 199);
+    /* outline:2px solid red; */
+    height:80%;
+    width:45%;
+    font-weight: 280;
+    font-size:1.7em;
+}
+#about-me p{
+    overflow: auto;
+}
+.bold{
+    color:rgb(226, 216, 216);
+    display:inline;
+    font-weight: 350;
+}
+#technologies{
+    width:45%;
+    height:80%;
+    /* outline:2px solid red; */
+}
+#technologies>p{
+    color:crimson;
+    font-size: 2em;
+    font-weight: 300;
+}
+#technologies ul{
+    font-size: 1em;
+    list-style: none;
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+#technologies li{
+    font-weight: 300;
+    width:25%;
+    margin:0rem 0.5rem 2.7rem 0rem;
 }
