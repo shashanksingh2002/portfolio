@@ -15,6 +15,7 @@ body {
   width: 100vw;
   margin-top: 8rem;
   margin-bottom: 12rem;
+  overflow-x: hidden;
 }
 /* *********HEADER CSS********* */
 .header {
@@ -147,6 +148,7 @@ body {
   width: 100vw;
   background-color: rgb(33, 33, 33);
   padding: 1.6em;
+  overflow-x: hidden;
   /* outline:2px solid white; */
 }
 #textsPage {
@@ -196,6 +198,7 @@ body {
 .thirdPage {
   width: 100vw;
   background-color: black;
+  overflow-x: hidden;
 }
 .cdText {
   /* outline:2px solid white; */
